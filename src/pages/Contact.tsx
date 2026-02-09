@@ -79,7 +79,7 @@ const Contact = () => {
               <div className="space-y-6">
                 <h3 className="text-lg font-semibold mb-4">Or reach out directly</h3>
                 <motion.a
-                  whileHover={{ scale: 1.02 }}
+                  whileHover={{ scale: 1.02, backgroundColor: "rgba(253, 232, 243, 0.15)" }}
                   href="mailto:pranamikaknc@gmail.com"
                   className="flex items-center gap-3 p-4 rounded-lg border border-border bg-card hover:border-primary/30 transition-colors"
                 >
@@ -90,7 +90,7 @@ const Contact = () => {
                   </div>
                 </motion.a>
                 <motion.a
-                  whileHover={{ scale: 1.02 }}
+                  whileHover={{ scale: 1.02, backgroundColor: "rgba(253, 232, 243, 0.15)" }}
                   href="https://www.linkedin.com/in/pranamikarajesh"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -103,7 +103,7 @@ const Contact = () => {
                   </div>
                 </motion.a>
                 <motion.a
-                  whileHover={{ scale: 1.02 }}
+                  whileHover={{ scale: 1.02, backgroundColor: "rgba(253, 232, 243, 0.15)" }}
                   href="tel:+916307637689"
                   className="flex items-center gap-3 p-4 rounded-lg border border-border bg-card hover:border-primary/30 transition-colors"
                 >
