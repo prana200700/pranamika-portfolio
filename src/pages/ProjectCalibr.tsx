@@ -3,6 +3,7 @@ import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import PageTransition from "@/components/PageTransition";
 
 const tags = ["AI Agents", "Google Sheets", "Google Drive", "LinkedIn API", "PDF Templating"];
@@ -94,6 +95,43 @@ const ProjectCalibr = () => {
                 <p className="text-muted-foreground leading-relaxed">
                   The carousel engine has eliminated human error and latency entirely. Content is consistently on-brand, relevant, and far from machine-like — thanks to detailed onboarding questions I asked the team about their preferred tones, writing style, and target audience. The carousels are generating real engagement and sparking discussions in the comments section.
                 </p>
+              </div>
+
+              <div>
+                <h2 className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">Before vs After</h2>
+                <div className="border border-border rounded-xl overflow-hidden">
+                  <Table>
+                    <TableHeader>
+                      <TableRow className="border-border">
+                        <TableHead className="text-muted-foreground font-semibold">Metric</TableHead>
+                        <TableHead className="text-muted-foreground font-semibold">Before</TableHead>
+                        <TableHead className="text-muted-foreground font-semibold">After</TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      <TableRow className="border-border">
+                        <TableCell className="font-medium text-foreground">Time per Carousel</TableCell>
+                        <TableCell className="text-muted-foreground">1–1.5 days</TableCell>
+                        <TableCell className="text-muted-foreground">1–2 hours on n8n, 0 manual hours</TableCell>
+                      </TableRow>
+                      <TableRow className="border-border">
+                        <TableCell className="font-medium text-foreground">Manual Work</TableCell>
+                        <TableCell className="text-muted-foreground">100%</TableCell>
+                        <TableCell className="text-muted-foreground">0%</TableCell>
+                      </TableRow>
+                      <TableRow className="border-border">
+                        <TableCell className="font-medium text-foreground">Posting & Content Consistency</TableCell>
+                        <TableCell className="text-muted-foreground">No</TableCell>
+                        <TableCell className="text-muted-foreground">Yes</TableCell>
+                      </TableRow>
+                      <TableRow className="border-border">
+                        <TableCell className="font-medium text-foreground">Engagement</TableCell>
+                        <TableCell className="text-muted-foreground">Lower — inconsistent, generic content</TableCell>
+                        <TableCell className="text-muted-foreground">Increased — consistent, targeted content</TableCell>
+                      </TableRow>
+                    </TableBody>
+                  </Table>
+                </div>
               </div>
             </div>
           </motion.div>
