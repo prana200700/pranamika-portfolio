@@ -36,17 +36,17 @@ const ProjectCalibr = () => {
             </div>
 
             <div className="grid grid-cols-3 gap-4 mb-10">
-              <div className="border border-border rounded-xl p-5 bg-card">
+              <div className="border border-border rounded-xl p-5 bg-card text-center">
                 <h2 className="text-sm font-semibold text-primary uppercase tracking-wider mb-2">Timeline</h2>
                 <p className="text-foreground font-medium">4 Weeks</p>
               </div>
-              <div className="border border-border rounded-xl p-5 bg-card">
+              <div className="border border-border rounded-xl p-5 bg-card text-center">
                 <h2 className="text-sm font-semibold text-primary uppercase tracking-wider mb-2">Client</h2>
                 <p className="text-foreground font-medium">Calibr.ai</p>
               </div>
-              <div className="border border-border rounded-xl p-5 bg-card">
+              <div className="border border-border rounded-xl p-5 bg-card text-center">
                 <h2 className="text-sm font-semibold text-primary uppercase tracking-wider mb-2">Tools Used</h2>
-                <div className="flex flex-wrap gap-1.5 mt-1">
+                <div className="flex flex-wrap gap-1.5 mt-1 justify-center">
                   {["n8n", "Claude API", "OpenAI API", "Google Sheets", "Google Drive", "LinkedIn API"].map((tool) => (
                     <Badge key={tool} variant="secondary" className="text-xs font-normal">
                       {tool}
