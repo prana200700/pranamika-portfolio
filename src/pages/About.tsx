@@ -56,13 +56,13 @@ const OrbitingLogo = ({
       }}
     >
       <div
-        className="w-10 h-10 rounded-full bg-card border border-border flex items-center justify-center"
+        className="w-14 h-14 rounded-full bg-card border border-border flex items-center justify-center"
         title={name}
       >
         <img
           src={logo}
           alt={name}
-          className="w-5 h-5"
+          className="w-7 h-7"
           style={{ filter: "brightness(0) invert(1)" }}
           onError={(e) => {
             const target = e.currentTarget;
@@ -172,7 +172,7 @@ const About = () => {
                 className="absolute inset-0 flex items-center justify-center"
                 style={{ scale: centerScale }}
               >
-                <h3 className="text-xl font-bold text-primary">My Tools</h3>
+                <h3 className="text-3xl font-bold text-primary">My Tools</h3>
               </motion.div>
             </div>
           </div>
