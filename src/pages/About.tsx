@@ -46,7 +46,7 @@ const About = () => {
                 { label: "Clients", value: "15+" },
                 { label: "Automations", value: "50+" },
               ].map((stat) => (
-                <div key={stat.label} className="rounded-xl p-5 text-center" style={{ background: 'radial-gradient(circle, rgba(253, 232, 243, 0.7), rgba(237, 233, 254, 0.3))' }}>
+                <div key={stat.label} className="rounded-xl p-5 text-center" style={{ background: 'radial-gradient(circle, rgba(253, 232, 243, 0.7), rgba(237, 233, 254, 0.3), hsl(0, 0%, 100%))' }}>
                   <div className="text-2xl font-bold text-primary">{stat.value}</div>
                   <div className="text-sm text-muted-foreground mt-1">{stat.label}</div>
                 </div>
