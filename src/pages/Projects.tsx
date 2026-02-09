@@ -5,11 +5,13 @@ import PageTransition from "@/components/PageTransition";
 
 const projects = [
   {
-    title: "LinkedIn Carousel Engine",
+    title: "LinkedIn Carousel Engine — Calibr.ai",
     description:
-      "An automated system that generates branded LinkedIn carousels from a content calendar, formats them in Canva, and publishes on schedule.",
-    tags: ["Make", "Canva", "LinkedIn API"],
+      "Built a fully automated carousel pipeline for Calibr.ai that replaced their manual design-and-review process. The workflow runs every Tuesday and Thursday — AI agents generate content aligned with their brand tone and target audiences, structure it into carousel slides, and produce templatised PDFs stored in Google Drive. Posts are scheduled to LinkedIn two hours later, giving the marketing head a review window. Eliminated human error, inconsistency across team members, and content latency — now runs independently with strong engagement.",
+    tags: ["AI Agents", "Google Sheets", "Google Drive", "LinkedIn API", "PDF Templating"],
     link: "#",
+    problem: "Small team with inconsistent carousel output, slow turnaround, and generic ideas.",
+    result: "Zero manual effort, consistent brand output, relevant content with real engagement.",
   },
   {
     title: "Content Pipeline for SaaS Brand",
