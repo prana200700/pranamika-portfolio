@@ -29,12 +29,21 @@ const OrbitingLogo = ({
   scrollYProgress: MotionValue<number>;
 }) => {
   const angle = (index / total) * Math.PI * 2 - Math.PI / 2;
-  const radius = 180;
+  const radius = 170;
   const x = Math.cos(angle) * radius;
   const y = Math.sin(angle) * radius;
 
-  const opacity = useTransform(scrollYProgress, [0, 0.15, 0.7, 0.85], [0, 1, 1, 0]);
-  const scale = useTransform(scrollYProgress, [0, 0.15, 0.7, 0.85], [0.3, 1, 1, 0.3]);
+  const delay = index * 0.02;
+  const opacity = useTransform(
+    scrollYProgress,
+    [0.1 + delay, 0.25 + delay, 0.65 - delay, 0.8 - delay],
+    [0, 1, 1, 0]
+  );
+  const scale = useTransform(
+    scrollYProgress,
+    [0.1 + delay, 0.25 + delay, 0.65 - delay, 0.8 - delay],
+    [0.2, 1, 1, 0.2]
+  );
 
   return (
     <motion.div
@@ -46,7 +55,10 @@ const OrbitingLogo = ({
         scale,
       }}
     >
-      <div className="w-10 h-10 rounded-full bg-card border border-border flex items-center justify-center backdrop-blur-sm" title={name}>
+      <div
+        className="w-10 h-10 rounded-full bg-card border border-border flex items-center justify-center"
+        title={name}
+      >
         <img
           src={logo}
           alt={name}
@@ -70,15 +82,15 @@ const OrbitingLogo = ({
 };
 
 const OrbitRing = ({ scrollYProgress }: { scrollYProgress: MotionValue<number> }) => {
-  const opacity = useTransform(scrollYProgress, [0, 0.15, 0.7, 0.85], [0, 0.4, 0.4, 0]);
+  const opacity = useTransform(scrollYProgress, [0.1, 0.25, 0.65, 0.8], [0, 0.3, 0.3, 0]);
   return (
     <motion.div
-      className="absolute rounded-full border border-border/30"
+      className="absolute rounded-full border border-primary/20"
       style={{
-        left: "calc(50% - 180px)",
-        top: "calc(50% - 180px)",
-        width: 360,
-        height: 360,
+        left: "calc(50% - 170px)",
+        top: "calc(50% - 170px)",
+        width: 340,
+        height: 340,
         opacity,
       }}
     />
@@ -89,14 +101,14 @@ const About = () => {
   const orbitRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: orbitRef,
-    offset: ["start end", "end start"],
+    offset: ["start 0.8", "end 0.2"],
   });
 
-  const statsScale = useTransform(scrollYProgress, [0, 0.15, 0.7, 0.85], [1, 0.85, 0.85, 1]);
+  const centerScale = useTransform(scrollYProgress, [0.1, 0.25, 0.65, 0.8], [1, 0.88, 0.88, 1]);
 
   return (
     <PageTransition>
-      <section className="min-h-[calc(100vh-80px)]">
+      <section>
         <div className="max-w-5xl mx-auto px-6 w-full py-20">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -124,11 +136,24 @@ const About = () => {
                 workflows, I help creators and businesses publish consistently without burning out.
               </p>
             </div>
+
+            <div className="mt-12 grid grid-cols-3 gap-6">
+              {[
+                { label: "Projects", value: "20+" },
+                { label: "Clients", value: "15+" },
+                { label: "Automations", value: "50+" },
+              ].map((stat) => (
+                <div key={stat.label} className="border border-border rounded-xl p-5 text-center">
+                  <div className="text-2xl font-bold text-primary">{stat.value}</div>
+                  <div className="text-sm text-muted-foreground mt-1">{stat.label}</div>
+                </div>
+              ))}
+            </div>
           </motion.div>
 
-          {/* Orbit section */}
-          <div ref={orbitRef} className="mt-20 mb-20 flex justify-center">
-            <div className="relative" style={{ width: 420, height: 420 }}>
+          {/* Orbit section - tall enough for scroll tracking */}
+          <div ref={orbitRef} className="py-32 flex justify-center" style={{ minHeight: "80vh" }}>
+            <div className="sticky top-1/4 relative" style={{ width: 420, height: 420 }}>
               <OrbitRing scrollYProgress={scrollYProgress} />
 
               {stackLogos.map((item, i) => (
@@ -142,25 +167,23 @@ const About = () => {
                 />
               ))}
 
-              {/* Stats in center */}
+              {/* Tool names in center */}
               <motion.div
                 className="absolute inset-0 flex items-center justify-center"
-                style={{ scale: statsScale }}
+                style={{ scale: centerScale }}
               >
-                <div className="grid grid-cols-3 gap-4">
-                  {[
-                    { label: "Projects", value: "20+" },
-                    { label: "Clients", value: "15+" },
-                    { label: "Automations", value: "50+" },
-                  ].map((stat) => (
-                    <div
-                      key={stat.label}
-                      className="border border-border rounded-xl p-4 text-center bg-background"
-                    >
-                      <div className="text-xl font-bold text-primary">{stat.value}</div>
-                      <div className="text-xs text-muted-foreground mt-1">{stat.label}</div>
-                    </div>
-                  ))}
+                <div className="text-center space-y-2">
+                  <h3 className="text-lg font-semibold text-primary mb-3">My Stack</h3>
+                  <div className="flex flex-wrap justify-center gap-2 max-w-[250px]">
+                    {stackLogos.map((item) => (
+                      <span
+                        key={item.name}
+                        className="text-xs text-muted-foreground border border-border rounded-full px-2.5 py-1 bg-card"
+                      >
+                        {item.name}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </motion.div>
             </div>
