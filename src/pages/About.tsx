@@ -122,22 +122,25 @@ const About = () => {
 
             <div className="space-y-6 text-muted-foreground leading-relaxed text-lg">
               <p>
-                I'm Pranamika — a passionate LinkedIn marketing specialist with experience
-                across marketing strategy, storytelling, and building structured content systems.
-                I design and build systems that take the pain out of content creation, turning
-                chaotic manual workflows into smooth, automated pipelines.
+                I'm Pranamika — a <strong className="text-foreground">LinkedIn Content Automation Specialist</strong> with 
+                a deep foundation in <strong className="text-foreground">marketing strategy, storytelling, 
+                and structured content systems</strong>. I design and build systems that remove the friction 
+                from content creation, turning chaotic manual workflows into <strong className="text-foreground">smooth, 
+                automated pipelines</strong>.
               </p>
               <p>
-                Over time, my work has naturally evolved from traditional content marketing to
-                automated content marketing. My work sits at the intersection of content strategy
-                and automation tooling — I believe great content shouldn't require great effort
-                every single time. It should flow from well-designed systems.
+                Over time, my work has naturally evolved from traditional content marketing 
+                into <strong className="text-foreground">automated content marketing</strong>. I operate at the 
+                intersection of content strategy and automation tooling — because I believe 
+                great content shouldn't demand great effort every single time. It should flow 
+                from <strong className="text-foreground">well-designed systems</strong>.
               </p>
               <p>
-                Whether it's carousel generation, scheduled posting, or end-to-end content
-                workflows, I help creators and businesses publish consistently without burning out.
-                As a classically trained singer, poet, and visual storyteller, I bring both
-                artistic sensitivity and structural clarity to my work.
+                From carousel generation to scheduled posting to <strong className="text-foreground">end-to-end 
+                content workflows</strong>, I help creators and businesses publish consistently — without 
+                burning out. And as a classically trained singer, poet, and visual storyteller, 
+                I bring both <strong className="text-foreground">artistic sensitivity and structural clarity</strong> to 
+                everything I build.
               </p>
             </div>
 
