@@ -1,0 +1,85 @@
+import { motion } from "framer-motion";
+import { ArrowLeft } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import PageTransition from "@/components/PageTransition";
+
+const tags = ["AI Agents", "Google Sheets", "Google Drive", "LinkedIn API", "PDF Templating"];
+
+const ProjectCalibr = () => {
+  return (
+    <PageTransition>
+      <section className="min-h-[calc(100vh-80px)]">
+        <div className="max-w-3xl mx-auto px-6 w-full py-20">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+          >
+            <Button asChild variant="ghost" size="sm" className="mb-8 gap-2 text-muted-foreground hover:text-foreground">
+              <Link to="/projects">
+                <ArrowLeft className="w-4 h-4" /> Back to Projects
+              </Link>
+            </Button>
+
+            <h1 className="text-4xl font-bold tracking-tight mb-4">
+              LinkedIn Carousel Engine — <span className="text-primary">Calibr.ai</span>
+            </h1>
+
+            <div className="flex flex-wrap gap-2 mb-8">
+              {tags.map((tag) => (
+                <Badge key={tag} variant="secondary" className="text-xs font-normal">
+                  {tag}
+                </Badge>
+              ))}
+            </div>
+
+            <div className="space-y-8">
+              <div>
+                <h2 className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">The Problem</h2>
+                <p className="text-muted-foreground leading-relaxed">
+                  Calibr.ai had a small digital marketing team responsible for creating LinkedIn carousels. The process was slow and inconsistent — different team members had varying aesthetic approaches despite following brand guidelines. Content ideation was often outdated or generic. They needed to templatise their carousels and post them regularly on two specific days of the week at a time suitable for audiences across the globe.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">Their Manual Process</h2>
+                <p className="text-muted-foreground leading-relaxed">
+                  One person from the digital marketing team would ideate content and hand it to the design team. The designers worked with brand Canva templates, but placement of text and visuals on the template still varied depending on the team member — consistency was hard to maintain. After creation, the carousel was sent to the marketing head for review, and after a few iterations, it was finally posted.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">My Solution</h2>
+                <p className="text-muted-foreground leading-relaxed">
+                  I designed a fully automated workflow that replaces every manual step with AI agents, nodes, and integrations. The workflow runs every Tuesday and Thursday at a set time:
+                </p>
+                <ul className="list-disc list-inside text-muted-foreground leading-relaxed mt-3 space-y-2 ml-2">
+                  <li>AI agents generate content aligned with the company's specific requirements — target audiences, tone, writing style, and content variations.</li>
+                  <li>Content is stored in a Google Sheet for tracking and reference.</li>
+                  <li>Another AI agent retrieves the data and generates structured content for each carousel slide.</li>
+                  <li>A deduplication node ensures ideas are never repeated and required variations are always present.</li>
+                  <li>Slide content is fed into templatised code that generates a consistent, branded PDF.</li>
+                  <li>The PDF is stored in Google Drive and scheduled to post to LinkedIn two hours later.</li>
+                </ul>
+                <p className="text-muted-foreground leading-relaxed mt-3">
+                  During the first few weeks, the marketing head reviewed each generated PDF within the two-hour window to monitor quality and fine-tune the agent. Now the system runs fully independently.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">The Result</h2>
+                <p className="text-muted-foreground leading-relaxed">
+                  The carousel engine has eliminated human error and latency entirely. Content is consistently on-brand, relevant, and far from machine-like — thanks to detailed onboarding questions I asked the team about their preferred tones, writing style, and target audience. The carousels are generating real engagement and sparking discussions in the comments section.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+    </PageTransition>
+  );
+};
+
+export default ProjectCalibr;
