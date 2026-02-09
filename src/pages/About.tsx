@@ -122,18 +122,16 @@ const About = () => {
 
             <div className="space-y-6 text-muted-foreground leading-relaxed text-lg">
               <p>
-                I'm Pranamika — a LinkedIn Content Automation Specialist. I design and build
-                systems that take the pain out of content creation, turning chaotic manual
-                workflows into smooth, automated pipelines.
+                I'm Pranamika. I am a passionate LinkedIn marketing specialist with experience
+                across marketing strategy, storytelling and building structured content systems.
               </p>
               <p>
-                My work sits at the intersection of content strategy and automation tooling.
-                I believe great content shouldn't require great effort every single time — it
-                should flow from well-designed systems.
+                Over time, my work has naturally evolved from traditional content marketing to
+                automated content marketing.
               </p>
               <p>
-                Whether it's carousel generation, scheduled posting, or end-to-end content
-                workflows, I help creators and businesses publish consistently without burning out.
+                As a classically trained singer, poet, and visual storyteller, I bring both
+                artistic sensitivity and structural clarity to my work.
               </p>
             </div>
 
@@ -148,6 +146,20 @@ const About = () => {
                   <div className="text-sm text-muted-foreground mt-1">{stat.label}</div>
                 </div>
               ))}
+            </div>
+
+            {/* Education */}
+            <div className="mt-16">
+              <h2 className="text-2xl font-semibold tracking-tight mb-4">
+                Education
+              </h2>
+              <p className="text-muted-foreground leading-relaxed text-lg">
+                My academic background combines language and marketing. I studied English (Honours)
+                at the University of Delhi, building a strong foundation in storytelling and clarity,
+                and later completed an MBA in Marketing at the Indian Institute of Management Bodh
+                Gaya, where I developed strategic and structured thinking. Together, these experiences
+                shape my approach to marketing as a balance of creativity and scalable systems.
+              </p>
             </div>
           </motion.div>
 
