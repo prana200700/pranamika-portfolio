@@ -2,9 +2,27 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
 import PageTransition from "@/components/PageTransition";
 
 const Index = () => {
+  const fullName = "Pranamika";
+  const [displayedName, setDisplayedName] = useState("");
+  const [showCursor, setShowCursor] = useState(true);
+
+  useEffect(() => {
+    let i = 0;
+    const interval = setInterval(() => {
+      setDisplayedName(fullName.slice(0, i + 1));
+      i++;
+      if (i >= fullName.length) {
+        clearInterval(interval);
+        setTimeout(() => setShowCursor(false), 600);
+      }
+    }, 120);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <PageTransition>
       <section className="min-h-[calc(100vh-80px)] flex items-center">
@@ -22,7 +40,10 @@ const Index = () => {
 
             <h1 className="text-5xl sm:text-6xl font-bold tracking-tight leading-[1.1] mb-6">
               Hi, I'm{" "}
-              <span className="text-primary">Pranamika</span>
+              <span className="text-primary">
+                {displayedName}
+                {showCursor && <span className="animate-pulse">|</span>}
+              </span>
             </h1>
 
             <p className="text-xl text-muted-foreground leading-relaxed mb-8">
