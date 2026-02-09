@@ -7,7 +7,7 @@ const StickyButtons = () => (
     <Button
       asChild
       size="lg"
-      className="gap-2 shadow-lg border border-border transition-all duration-500 hover:border-transparent hover:shadow-[0_0_20px_8px_rgba(253,232,243,0.4)] hover:bg-[linear-gradient(135deg,hsl(330,80%,92%),hsl(270,60%,90%))] hover:text-foreground"
+      className="gap-2 shadow-lg border border-border transition-all duration-500 hover:border-transparent hover:text-foreground [&:hover]:bg-[radial-gradient(circle,hsl(330,80%,92%)_0%,hsl(270,60%,90%)_40%,hsl(var(--background))_100%)]"
     >
       <Link to="/contact">
         <Mail className="w-4 h-4" /> Reach Me
@@ -17,7 +17,7 @@ const StickyButtons = () => (
       asChild
       size="lg"
       variant="outline"
-      className="gap-2 shadow-lg bg-card transition-all duration-500 hover:border-transparent hover:shadow-[0_0_20px_8px_rgba(253,232,243,0.4)] hover:bg-[linear-gradient(135deg,hsl(330,80%,92%),hsl(270,60%,90%))] hover:text-foreground"
+      className="gap-2 shadow-lg bg-card transition-all duration-500 hover:border-transparent hover:text-foreground [&:hover]:bg-[radial-gradient(circle,hsl(330,80%,92%)_0%,hsl(270,60%,90%)_40%,hsl(var(--background))_100%)]"
     >
       <a href="https://drive.google.com/file/d/19Cp7gzfJAMcUIfkl6p1HemirB8GulBg1/view" target="_blank" rel="noopener noreferrer">
         <FileText className="w-4 h-4" /> My CV
