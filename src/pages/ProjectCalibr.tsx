@@ -35,6 +35,27 @@ const ProjectCalibr = () => {
               ))}
             </div>
 
+            <div className="grid grid-cols-3 gap-4 mb-10 border border-border rounded-xl p-5 bg-card">
+              <div>
+                <h2 className="text-sm font-semibold text-primary uppercase tracking-wider mb-2">Timeline</h2>
+                <p className="text-foreground font-medium">4 Weeks</p>
+              </div>
+              <div>
+                <h2 className="text-sm font-semibold text-primary uppercase tracking-wider mb-2">Tools Used</h2>
+                <div className="flex flex-wrap gap-1.5">
+                  {["n8n", "Claude", "OpenAI API", "Google Sheets", "Google Drive", "LinkedIn API"].map((tool) => (
+                    <Badge key={tool} variant="secondary" className="text-xs font-normal">
+                      {tool}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <h2 className="text-sm font-semibold text-primary uppercase tracking-wider mb-2">Client</h2>
+                <p className="text-foreground font-medium">Calibr.ai</p>
+              </div>
+            </div>
+
             <div className="space-y-8">
               <div>
                 <h2 className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">The Problem</h2>
