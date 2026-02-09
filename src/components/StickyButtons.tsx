@@ -10,7 +10,7 @@ const StickyButtons = () => (
       </Link>
     </Button>
     <Button asChild size="lg" variant="outline" className="gap-2 shadow-lg bg-card">
-      <a href="#" target="_blank" rel="noopener noreferrer">
+      <a href="https://drive.google.com/file/d/19Cp7gzfJAMcUIfkl6p1HemirB8GulBg1/view" target="_blank" rel="noopener noreferrer">
         <FileText className="w-4 h-4" /> My CV
       </a>
     </Button>
