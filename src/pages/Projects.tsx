@@ -13,7 +13,7 @@ const projects = [
     link: "/projects/calibr",
   },
   {
-    title: "LinkedIn Post Automation — B2B SaaS Founder",
+    title: "LinkedIn Content Automation System - B2B SaaS Founder",
     description:
       "Automated a founder's LinkedIn content pipeline with timezone-optimised scheduling, achieving 60x more engagement and zero manual effort.",
     tags: ["n8n", "AI Agents", "Google Sheets", "LinkedIn API"],
