@@ -1,4 +1,4 @@
-import { Linkedin, Mail } from "lucide-react";
+import { Linkedin, Mail, Phone } from "lucide-react";
 
 const Footer = () => (
   <footer className="border-t border-border py-8 mt-20">
@@ -10,6 +10,9 @@ const Footer = () => (
         </a>
         <a href="mailto:pranamikaknc@gmail.com" className="hover:text-primary transition-colors">
           <Mail className="w-5 h-5" />
+        </a>
+        <a href="tel:+916307637689" className="hover:text-primary transition-colors">
+          <Phone className="w-5 h-5" />
         </a>
       </div>
     </div>
