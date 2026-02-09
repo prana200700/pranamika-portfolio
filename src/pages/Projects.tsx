@@ -13,10 +13,11 @@ const projects = [
     link: "/projects/calibr",
   },
   {
-    title: "Content Pipeline for SaaS Brand",
+    title: "LinkedIn Post Automation — B2B SaaS Founder",
     description:
-      "End-to-end automation that pulls topic ideas from Notion, drafts posts via AI, gets approval in Slack, and publishes to LinkedIn.",
-    tags: ["n8n", "OpenAI", "Notion", "Slack"],
+      "Automated a founder's LinkedIn content pipeline with timezone-optimised scheduling, achieving 60x more engagement and zero manual effort.",
+    tags: ["n8n", "AI Agents", "Google Sheets", "LinkedIn API"],
+    link: "/projects/linkedin-automation",
   },
   {
     title: "Weekly Post Scheduler",
