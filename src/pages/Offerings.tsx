@@ -57,6 +57,7 @@ const Offerings = () => {
                   key={offering.title}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
+                  whileHover={{ scale: 1.02, backgroundColor: "rgba(253, 232, 243, 0.15)" }}
                   transition={{ duration: 0.4, delay: 0.15 * (i + 1) }}
                   className="border border-border rounded-xl p-6 bg-card hover:border-primary/30 transition-colors group"
                 >
