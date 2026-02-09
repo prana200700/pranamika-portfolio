@@ -78,7 +78,8 @@ const Contact = () => {
 
               <div className="space-y-6">
                 <h3 className="text-lg font-semibold mb-4">Or reach out directly</h3>
-                <a
+                <motion.a
+                  whileHover={{ scale: 1.02 }}
                   href="mailto:pranamikaknc@gmail.com"
                   className="flex items-center gap-3 p-4 rounded-lg border border-border bg-card hover:border-primary/30 transition-colors"
                 >
@@ -87,8 +88,9 @@ const Contact = () => {
                     <div className="text-sm font-medium">Email</div>
                     <div className="text-sm text-muted-foreground">Drop me an email</div>
                   </div>
-                </a>
-                <a
+                </motion.a>
+                <motion.a
+                  whileHover={{ scale: 1.02 }}
                   href="https://www.linkedin.com/in/pranamikarajesh"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -99,8 +101,9 @@ const Contact = () => {
                     <div className="text-sm font-medium">LinkedIn</div>
                     <div className="text-sm text-muted-foreground">Connect with me</div>
                   </div>
-                </a>
-                <a
+                </motion.a>
+                <motion.a
+                  whileHover={{ scale: 1.02 }}
                   href="tel:+916307637689"
                   className="flex items-center gap-3 p-4 rounded-lg border border-border bg-card hover:border-primary/30 transition-colors"
                 >
@@ -109,7 +112,7 @@ const Contact = () => {
                     <div className="text-sm font-medium">Phone / WhatsApp</div>
                     <div className="text-sm text-muted-foreground">Call or message me</div>
                   </div>
-                </a>
+                </motion.a>
               </div>
             </div>
           </motion.div>
