@@ -159,7 +159,7 @@ const About = () => {
 
             {/* Education */}
             <div className="mt-16">
-              <h2 className="text-2xl font-semibold tracking-tight mb-4">
+              <h2 className="text-2xl font-medium tracking-tight mb-4">
                 Education
               </h2>
               <p className="text-muted-foreground leading-relaxed text-lg">
