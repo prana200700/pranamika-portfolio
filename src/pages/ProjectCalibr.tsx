@@ -26,7 +26,7 @@ const ProjectCalibr = () => {
               </Link>
             </Button>
 
-            <h1 className="text-4xl font-bold tracking-tight mb-4">LinkedIn Carousel System - Calibr.ai<span className="text-primary">Calibr.ai</span>
+            <h1 className="text-4xl font-bold tracking-tight mb-4">LinkedIn Carousel System -  <span className="text-primary">Calibr.ai</span>
             </h1>
 
             <div className="flex flex-wrap gap-2 mb-8">
