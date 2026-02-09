@@ -26,12 +26,6 @@ const projects = [
     tags: ["AI Agents", "Prompt Engineering", "Instagram", "LinkedIn"],
     link: "/projects/content-calendar",
   },
-  {
-    title: "Thought Leadership Amplifier",
-    description:
-      "Automated repurposing system that turns long-form articles into multiple LinkedIn posts, each tailored for different audiences.",
-    tags: ["Make", "OpenAI", "Airtable"],
-  },
 ];
 
 const Projects = () => {
