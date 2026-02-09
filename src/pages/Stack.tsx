@@ -153,7 +153,7 @@ const Stack = () => {
                           initial={{ opacity: 0, y: 15 }}
                           animate={{ opacity: 1, y: 0 }}
                           transition={{ duration: 0.35, delay: 0.08 * i }}
-                          className="border border-border rounded-xl p-5 bg-card hover:border-primary/30 transition-colors"
+                          className="border border-border rounded-xl p-5 bg-card hover:border-primary/30 transition-all duration-300 hover:scale-[1.02] origin-left"
                         >
                           <div className="flex items-center gap-4">
                             <StackLogo src={item.logo} name={item.name} color={item.color} />
