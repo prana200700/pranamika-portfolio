@@ -103,7 +103,7 @@ const StackLogo = ({ src, name, color }: { src: string; name: string; color: str
       src={src}
       alt={name}
       className="w-5 h-5"
-      style={{ filter: "brightness(0) invert(1)" }}
+      style={{ filter: "brightness(0) saturate(100%) invert(60%) sepia(30%) saturate(1000%) hue-rotate(300deg)" }}
       onError={(e) => {
         const target = e.currentTarget;
         target.style.display = "none";
