@@ -19,62 +19,6 @@ const stackItems: StackItem[] = [
     color: "hsl(10, 80%, 55%)",
   },
   {
-    name: "LinkedIn",
-    category: "Distribution Layer",
-    description:
-      "I use LinkedIn as the primary distribution layer, designing systems for consistent posting, content scheduling, performance observation, and long-term content strategy execution rather than one-off publishing.",
-    logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg",
-    color: "hsl(210, 80%, 55%)",
-  },
-  {
-    name: "HTML",
-    category: "Structure",
-    description:
-      "HTML is the backbone of my assets. I use it to structure and format automated content outputs, building reusable templates for assets such as carousels, landing sections, and export-ready content.",
-    logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/html5.svg",
-    color: "hsl(16, 85%, 55%)",
-  },
-  {
-    name: "GitHub",
-    category: "Assets Management",
-    description:
-      "I use GitHub as an infrastructure layer for managing, versioning, and delivering assets across automated content workflows, enabling reuse, stability, and clean system handoffs.",
-    logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg",
-    color: "hsl(0, 0%, 75%)",
-  },
-  {
-    name: "OpenAI APIs",
-    category: "Integrations",
-    description:
-      "I use OpenAI APIs for content generation, ideation, and refinement within automated workflows, integrating them programmatically rather than using them as standalone tools.",
-    logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/openai.svg",
-    color: "hsl(170, 60%, 50%)",
-  },
-  {
-    name: "Claude APIs",
-    category: "Integrations",
-    description:
-      "I use Claude APIs for long-form content drafting, rewriting, and structural refinement, particularly where coherence, tone control, and contextual reasoning are required.",
-    logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/anthropic.svg",
-    color: "hsl(30, 70%, 60%)",
-  },
-  {
-    name: "Google APIs",
-    category: "Integrations & Operations",
-    description:
-      "I use Google APIs to handle data flow, storage, and system connectivity, enabling automation across Sheets, Drive, and other Google services within larger workflows.",
-    logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/google.svg",
-    color: "hsl(45, 90%, 55%)",
-  },
-  {
-    name: "Google Sheets",
-    category: "Planning & Operations",
-    description:
-      "I use Google Sheets as both an input and output layer, managing content calendars, prompts, and parameters while also receiving AI-generated content based on predefined schedules.",
-    logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googlesheets.svg",
-    color: "hsl(140, 60%, 50%)",
-  },
-  {
     name: "Zapier",
     category: "Automation",
     description:
@@ -83,12 +27,68 @@ const stackItems: StackItem[] = [
     color: "hsl(15, 90%, 55%)",
   },
   {
+    name: "OpenAI APIs",
+    category: "AI & Integrations",
+    description:
+      "I use OpenAI APIs for content generation, ideation, and refinement within automated workflows, integrating them programmatically rather than using them as standalone tools.",
+    logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/openai.svg",
+    color: "hsl(170, 60%, 50%)",
+  },
+  {
+    name: "Claude APIs",
+    category: "AI & Integrations",
+    description:
+      "I use Claude APIs for long-form content drafting, rewriting, and structural refinement, particularly where coherence, tone control, and contextual reasoning are required.",
+    logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/anthropic.svg",
+    color: "hsl(30, 70%, 60%)",
+  },
+  {
+    name: "Google APIs",
+    category: "AI & Integrations",
+    description:
+      "I use Google APIs to handle data flow, storage, and system connectivity, enabling automation across Sheets, Drive, and other Google services within larger workflows.",
+    logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/google.svg",
+    color: "hsl(45, 90%, 55%)",
+  },
+  {
+    name: "LinkedIn",
+    category: "Distribution & Planning",
+    description:
+      "I use LinkedIn as the primary distribution layer, designing systems for consistent posting, content scheduling, performance observation, and long-term content strategy execution rather than one-off publishing.",
+    logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg",
+    color: "hsl(210, 80%, 55%)",
+  },
+  {
+    name: "Google Sheets",
+    category: "Distribution & Planning",
+    description:
+      "I use Google Sheets as both an input and output layer, managing content calendars, prompts, and parameters while also receiving AI-generated content based on predefined schedules.",
+    logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googlesheets.svg",
+    color: "hsl(140, 60%, 50%)",
+  },
+  {
     name: "Notion",
-    category: "Productivity",
+    category: "Distribution & Planning",
     description:
       "I use Notion as a central knowledge base and content planning hub, structuring ideas, briefs, and templates that feed into automated content workflows.",
     logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/notion.svg",
     color: "hsl(0, 0%, 80%)",
+  },
+  {
+    name: "HTML",
+    category: "Structure & Assets",
+    description:
+      "HTML is the backbone of my assets. I use it to structure and format automated content outputs, building reusable templates for assets such as carousels, landing sections, and export-ready content.",
+    logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/html5.svg",
+    color: "hsl(16, 85%, 55%)",
+  },
+  {
+    name: "GitHub",
+    category: "Structure & Assets",
+    description:
+      "I use GitHub as an infrastructure layer for managing, versioning, and delivering assets across automated content workflows, enabling reuse, stability, and clean system handoffs.",
+    logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg",
+    color: "hsl(0, 0%, 75%)",
   },
 ];
 
