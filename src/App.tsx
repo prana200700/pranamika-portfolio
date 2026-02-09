@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import StickyButtons from "./components/StickyButtons";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Stack from "./pages/Stack";
@@ -37,6 +38,7 @@ const App = () => (
           </AnimatePresence>
         </main>
         <Footer />
+        <StickyButtons />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
