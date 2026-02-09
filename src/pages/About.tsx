@@ -122,14 +122,20 @@ const About = () => {
 
             <div className="space-y-6 text-muted-foreground leading-relaxed text-lg">
               <p>
-                I'm Pranamika. I am a passionate LinkedIn marketing specialist with experience
-                across marketing strategy, storytelling and building structured content systems.
+                I'm Pranamika — a passionate LinkedIn marketing specialist with experience
+                across marketing strategy, storytelling, and building structured content systems.
+                I design and build systems that take the pain out of content creation, turning
+                chaotic manual workflows into smooth, automated pipelines.
               </p>
               <p>
                 Over time, my work has naturally evolved from traditional content marketing to
-                automated content marketing.
+                automated content marketing. My work sits at the intersection of content strategy
+                and automation tooling — I believe great content shouldn't require great effort
+                every single time. It should flow from well-designed systems.
               </p>
               <p>
+                Whether it's carousel generation, scheduled posting, or end-to-end content
+                workflows, I help creators and businesses publish consistently without burning out.
                 As a classically trained singer, poet, and visual storyteller, I bring both
                 artistic sensitivity and structural clarity to my work.
               </p>
