@@ -9,6 +9,7 @@ const Index = () => {
   const fullName = "Pranamika";
   const [displayedName, setDisplayedName] = useState("");
   const [showCursor, setShowCursor] = useState(true);
+  const [showGradient, setShowGradient] = useState(true);
 
   useEffect(() => {
     let i = 0;
@@ -18,6 +19,7 @@ const Index = () => {
       if (i >= fullName.length) {
         clearInterval(interval);
         setTimeout(() => setShowCursor(false), 600);
+        setTimeout(() => setShowGradient(false), 1500);
       }
     }, 120);
     return () => clearInterval(interval);
@@ -40,7 +42,7 @@ const Index = () => {
 
             <h1 className="text-5xl sm:text-6xl font-bold tracking-tight leading-[1.1] mb-6">
               Hi, I'm{" "}
-              <span className="bg-gradient-to-r from-[hsl(330,80%,80%)] to-[hsl(270,60%,80%)] bg-clip-text text-transparent">
+              <span className={`transition-all duration-1000 ${showGradient ? "bg-gradient-to-r from-[hsl(330,80%,80%)] to-[hsl(270,60%,80%)] bg-clip-text text-transparent" : "text-primary"}`}>
                 {displayedName}
                 {showCursor && <span className="text-foreground animate-pulse">|</span>}
               </span>
