@@ -36,7 +36,7 @@ const ProjectCalibr = () => {
               ))}
             </div>
 
-            <div className="border border-border rounded-xl p-5 bg-card mb-10 space-y-4">
+            <div className="space-y-4 mb-10">
               <div>
                 <h2 className="text-sm font-semibold text-primary uppercase tracking-wider mb-1">Timeline</h2>
                 <p className="text-foreground font-medium">4 Weeks</p>
@@ -55,6 +55,7 @@ const ProjectCalibr = () => {
                   ))}
                 </div>
               </div>
+              <div className="border-t border-border" />
             </div>
 
             <div className="space-y-8">
