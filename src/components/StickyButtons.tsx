@@ -4,12 +4,21 @@ import { Button } from "@/components/ui/button";
 
 const StickyButtons = () => (
   <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3" style={{ opacity: 0.8 }}>
-    <Button asChild size="lg" className="gap-2 shadow-lg">
+    <Button
+      asChild
+      size="lg"
+      className="gap-2 shadow-lg border border-border transition-all duration-500 hover:border-transparent hover:shadow-[0_0_20px_8px_rgba(253,232,243,0.4)] hover:bg-[linear-gradient(135deg,hsl(330,80%,92%),hsl(270,60%,90%))] hover:text-foreground"
+    >
       <Link to="/contact">
         <Mail className="w-4 h-4" /> Reach Me
       </Link>
     </Button>
-    <Button asChild size="lg" variant="outline" className="gap-2 shadow-lg bg-card">
+    <Button
+      asChild
+      size="lg"
+      variant="outline"
+      className="gap-2 shadow-lg bg-card transition-all duration-500 hover:border-transparent hover:shadow-[0_0_20px_8px_rgba(253,232,243,0.4)] hover:bg-[linear-gradient(135deg,hsl(330,80%,92%),hsl(270,60%,90%))] hover:text-foreground"
+    >
       <a href="https://drive.google.com/file/d/19Cp7gzfJAMcUIfkl6p1HemirB8GulBg1/view" target="_blank" rel="noopener noreferrer">
         <FileText className="w-4 h-4" /> My CV
       </a>
