@@ -5,10 +5,10 @@ const Footer = () => (
     <div className="max-w-5xl mx-auto px-6 flex items-center justify-between text-sm text-muted-foreground">
       <span>© {new Date().getFullYear()} Pranamika. All rights reserved.</span>
       <div className="flex gap-3">
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+        <a href="https://www.linkedin.com/in/pranamikarajesh" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
           <Linkedin className="w-5 h-5" />
         </a>
-        <a href="mailto:hello@pranamika.com" className="hover:text-primary transition-colors">
+        <a href="mailto:pranamikaknc@gmail.com" className="hover:text-primary transition-colors">
           <Mail className="w-5 h-5" />
         </a>
       </div>
