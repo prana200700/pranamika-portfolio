@@ -40,9 +40,9 @@ const Index = () => {
 
             <h1 className="text-5xl sm:text-6xl font-bold tracking-tight leading-[1.1] mb-6">
               Hi, I'm{" "}
-              <span className="text-primary">
+              <span className="bg-gradient-to-r from-[hsl(330,80%,80%)] to-[hsl(270,60%,80%)] bg-clip-text text-transparent">
                 {displayedName}
-                {showCursor && <span className="animate-pulse">|</span>}
+                {showCursor && <span className="text-foreground animate-pulse">|</span>}
               </span>
             </h1>
 
