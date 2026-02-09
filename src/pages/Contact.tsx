@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import PageTransition from "@/components/PageTransition";
-import { Mail, Linkedin, Send } from "lucide-react";
+import { Mail, Linkedin, Send, Phone } from "lucide-react";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -98,6 +98,16 @@ const Contact = () => {
                   <div>
                     <div className="text-sm font-medium">LinkedIn</div>
                     <div className="text-sm text-muted-foreground">Connect with me</div>
+                  </div>
+                </a>
+                <a
+                  href="tel:+916307637689"
+                  className="flex items-center gap-3 p-4 rounded-lg border border-border bg-card hover:border-primary/30 transition-colors"
+                >
+                  <Phone className="w-5 h-5 text-primary" />
+                  <div>
+                    <div className="text-sm font-medium">Phone</div>
+                    <div className="text-sm text-muted-foreground">Give me a call</div>
                   </div>
                 </a>
               </div>
