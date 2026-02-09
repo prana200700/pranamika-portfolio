@@ -53,6 +53,7 @@ const Projects = () => {
                   key={project.title}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
+                  whileHover={{ scale: 1.02, backgroundColor: "rgba(253, 232, 243, 0.15)" }}
                   transition={{ duration: 0.4, delay: 0.1 * (i + 1) }}
                   onClick={() => project.link && navigate(project.link)}
                   className={`group border border-border rounded-xl p-6 bg-card hover:border-primary/30 transition-colors block ${project.link ? "cursor-pointer" : ""}`}
