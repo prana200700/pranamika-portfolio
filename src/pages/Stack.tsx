@@ -97,7 +97,7 @@ const categories = [...new Set(stackItems.map((item) => item.category))];
 const StackLogo = ({ src, name, color }: { src: string; name: string; color: string }) => (
   <div
     className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0"
-    style={{ backgroundColor: `${color}15` }}
+    style={{ background: 'linear-gradient(to bottom, rgba(253, 242, 248, 0.9), rgba(237, 233, 254, 0.3))' }}
   >
     <img
       src={src}
