@@ -61,7 +61,7 @@ const Offerings = () => {
                   className="border border-border rounded-xl p-6 bg-card hover:border-primary/30 transition-colors group"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                    <div className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0" style={{ background: 'linear-gradient(to bottom, rgba(253, 232, 243, 0.9), rgba(237, 233, 254, 0.5))' }}>
                       <offering.icon className="w-5 h-5 text-primary" />
                     </div>
                     <div>
