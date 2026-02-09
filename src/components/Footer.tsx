@@ -1,10 +1,10 @@
 import { Linkedin, Mail, Phone } from "lucide-react";
 
 const Footer = () => (
-  <footer className="border-t border-border py-8 mt-20">
-    <div className="max-w-2xl mx-auto px-6 flex items-center justify-between text-sm text-muted-foreground">
+  <footer className="border-t border-border py-8 mt-20 px-6">
+    <div className="flex items-center justify-between text-sm text-muted-foreground">
       <span>© {new Date().getFullYear()} Pranamika. All rights reserved.</span>
-      <div className="flex gap-3">
+      <div className="flex gap-3 mr-[30%]">
         <a href="https://www.linkedin.com/in/pranamikarajesh" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
           <Linkedin className="w-5 h-5" />
         </a>
