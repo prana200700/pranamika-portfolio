@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Stack from "./pages/Stack";
+import Projects from "./pages/Projects";
 import Offerings from "./pages/Offerings";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -28,6 +29,7 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/about" element={<About />} />
               <Route path="/stack" element={<Stack />} />
+              <Route path="/projects" element={<Projects />} />
               <Route path="/offerings" element={<Offerings />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NotFound />} />
