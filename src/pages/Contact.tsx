@@ -79,17 +79,17 @@ const Contact = () => {
               <div className="space-y-6">
                 <h3 className="text-lg font-semibold mb-4">Or reach out directly</h3>
                 <a
-                  href="mailto:hello@pranamika.com"
+                  href="mailto:pranamikaknc@gmail.com"
                   className="flex items-center gap-3 p-4 rounded-lg border border-border bg-card hover:border-primary/30 transition-colors"
                 >
                   <Mail className="w-5 h-5 text-primary" />
                   <div>
                     <div className="text-sm font-medium">Email</div>
-                    <div className="text-sm text-muted-foreground">hello@pranamika.com</div>
+                    <div className="text-sm text-muted-foreground">pranamikaknc@gmail.com</div>
                   </div>
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/pranamikarajesh"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 p-4 rounded-lg border border-border bg-card hover:border-primary/30 transition-colors"
@@ -97,7 +97,7 @@ const Contact = () => {
                   <Linkedin className="w-5 h-5 text-primary" />
                   <div>
                     <div className="text-sm font-medium">LinkedIn</div>
-                    <div className="text-sm text-muted-foreground">Connect with me</div>
+                    <div className="text-sm text-muted-foreground">linkedin.com/in/pranamikarajesh</div>
                   </div>
                 </a>
               </div>
