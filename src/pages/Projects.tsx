@@ -20,10 +20,11 @@ const projects = [
     link: "/projects/linkedin-automation",
   },
   {
-    title: "Weekly Post Scheduler",
+    title: "Content Calendar — Finance Creator",
     description:
-      "A repeatable workflow that batches and schedules a week's worth of LinkedIn posts from a single Google Sheet input.",
-    tags: ["Zapier", "Google Sheets", "Buffer"],
+      "Built an automated weekly content calendar for a finance creator, generating platform-specific post ideas for Instagram and LinkedIn every Sunday.",
+    tags: ["AI Agents", "Prompt Engineering", "Instagram", "LinkedIn"],
+    link: "/projects/content-calendar",
   },
   {
     title: "Thought Leadership Amplifier",
