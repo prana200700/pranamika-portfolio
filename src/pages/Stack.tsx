@@ -103,7 +103,7 @@ const StackLogo = ({ src, name, color }: { src: string; name: string; color: str
       src={src}
       alt={name}
       className="w-5 h-5"
-      style={{ filter: "brightness(0) saturate(100%) invert(60%) sepia(30%) saturate(1000%) hue-rotate(300deg)" }}
+      style={{ filter: "brightness(0) invert(30%)" }}
       onError={(e) => {
         const target = e.currentTarget;
         target.style.display = "none";
@@ -155,7 +155,7 @@ const Stack = () => {
                           transition={{ duration: 0.35, delay: 0.08 * i }}
                           className="border border-border rounded-xl p-5 bg-card hover:border-primary/30 transition-colors"
                         >
-                          <div className="flex items-start gap-4">
+                          <div className="flex items-center gap-4">
                             <StackLogo src={item.logo} name={item.name} color={item.color} />
                             <div>
                               <h4 className="font-semibold mb-1">{item.name}</h4>
