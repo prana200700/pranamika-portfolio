@@ -20,7 +20,8 @@ const StickyButtons = () => (
       <Button
         asChild
         size="lg"
-        className="gap-2 shadow-lg bg-card border border-border transition-colors duration-300 hover:border-primary/30 w-full"
+        variant="outline"
+        className="gap-2 shadow-lg bg-card transition-colors duration-300 hover:border-primary/30 w-full"
       >
         <a href="https://drive.google.com/file/d/19Cp7gzfJAMcUIfkl6p1HemirB8GulBg1/view" target="_blank" rel="noopener noreferrer">
           <FileText className="w-4 h-4" /> My CV
