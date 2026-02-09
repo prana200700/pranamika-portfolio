@@ -20,7 +20,7 @@ const projects = [
     link: "/projects/linkedin-automation",
   },
   {
-    title: "Content Calendar — Finance Content Creator",
+    title: "Automated Content Calendar System - Finance Content Creator",
     description:
       "Built an automated weekly content calendar for a finance creator, generating platform-specific post ideas for Instagram and LinkedIn every Sunday.",
     tags: ["AI Agents", "Prompt Engineering", "Instagram", "LinkedIn"],
