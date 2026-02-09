@@ -172,19 +172,7 @@ const About = () => {
                 className="absolute inset-0 flex items-center justify-center"
                 style={{ scale: centerScale }}
               >
-                <div className="text-center space-y-2">
-                  <h3 className="text-lg font-semibold text-primary mb-3">My Stack</h3>
-                  <div className="flex flex-wrap justify-center gap-2 max-w-[250px]">
-                    {stackLogos.map((item) => (
-                      <span
-                        key={item.name}
-                        className="text-xs text-muted-foreground border border-border rounded-full px-2.5 py-1 bg-card"
-                      >
-                        {item.name}
-                      </span>
-                    ))}
-                  </div>
-                </div>
+                <h3 className="text-xl font-bold text-primary">My Tools</h3>
               </motion.div>
             </div>
           </div>
