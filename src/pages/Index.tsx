@@ -26,7 +26,7 @@ const Index = () => {
             </h1>
 
             <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-              I help B2B companies, creators, or individuals automate their LinkedIn content. From idea to published post — 
+              I help creators automate their LinkedIn content. From idea to published post — 
               fully automated, structured, and scalable.
             </p>
 
