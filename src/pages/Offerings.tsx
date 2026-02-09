@@ -2,6 +2,12 @@ import { motion } from "framer-motion";
 import { ArrowRight, Workflow, FileText, Settings } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import PageTransition from "@/components/PageTransition";
 
 const offerings = [
@@ -81,6 +87,52 @@ const Offerings = () => {
                   Let's Work Together <ArrowRight className="w-4 h-4" />
                 </Link>
               </Button>
+            </motion.div>
+
+            {/* FAQs */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1 }}
+              className="mt-20"
+            >
+              <h2 className="text-2xl font-medium tracking-tight mb-6">
+                Frequently Asked <span className="text-primary">Questions</span>
+              </h2>
+              <Accordion type="single" collapsible className="w-full">
+                <AccordionItem value="why-linkedin" className="border-border">
+                  <AccordionTrigger className="text-left text-base hover:no-underline">
+                    Why LinkedIn specifically?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed">
+                    Today, the power of the corporate social world lies in LinkedIn. SEO is becoming
+                    more and more obsolete with the rise of AI models. LinkedIn is the future of
+                    corporate recognition and interaction.
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="approach" className="border-border">
+                  <AccordionTrigger className="text-left text-base hover:no-underline">
+                    How is your approach different from typical LinkedIn content marketing?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed">
+                    I focus on building repeatable systems rather than manual posting. My work combines
+                    content strategy with automation, templates, and API-driven workflows, enabling
+                    consistent output, clarity of voice, and scalability over time — without compromising
+                    quality or intent.
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="authenticity" className="border-border">
+                  <AccordionTrigger className="text-left text-base hover:no-underline">
+                    Why automation for content — doesn't it reduce authenticity?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed">
+                    Used thoughtfully, automation removes operational friction, not creative intent.
+                    By automating structure and execution, more attention can be given to narrative,
+                    tone, and strategy. The result is content that remains human-led but is supported
+                    by systems designed for consistency and scale.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </motion.div>
           </motion.div>
         </div>
