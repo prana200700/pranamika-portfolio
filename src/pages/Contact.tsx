@@ -106,8 +106,8 @@ const Contact = () => {
                 >
                   <Phone className="w-5 h-5 text-primary" />
                   <div>
-                    <div className="text-sm font-medium">Phone</div>
-                    <div className="text-sm text-muted-foreground">Give me a call</div>
+                    <div className="text-sm font-medium">Phone / WhatsApp</div>
+                    <div className="text-sm text-muted-foreground">Call or message me</div>
                   </div>
                 </a>
               </div>
