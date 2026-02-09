@@ -15,6 +15,7 @@ import Offerings from "./pages/Offerings";
 import Contact from "./pages/Contact";
 import ProjectCalibr from "./pages/ProjectCalibr";
 import ProjectLinkedInAutomation from "./pages/ProjectLinkedInAutomation";
+import ProjectContentCalendar from "./pages/ProjectContentCalendar";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -35,6 +36,7 @@ const App = () => (
               <Route path="/projects" element={<Projects />} />
               <Route path="/projects/calibr" element={<ProjectCalibr />} />
               <Route path="/projects/linkedin-automation" element={<ProjectLinkedInAutomation />} />
+              <Route path="/projects/content-calendar" element={<ProjectContentCalendar />} />
               <Route path="/offerings" element={<Offerings />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NotFound />} />
