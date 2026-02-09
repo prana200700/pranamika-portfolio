@@ -42,8 +42,13 @@ const Index = () => {
 
             <h1 className="text-5xl sm:text-6xl font-bold tracking-tight leading-[1.1] mb-6">
               Hi, I'm{" "}
-              <span className={`transition-all duration-1000 ${showGradient ? "bg-gradient-to-r from-[hsl(330,80%,80%)] to-[hsl(270,60%,80%)] bg-clip-text text-transparent" : "text-primary"}`}>
-                {displayedName}
+              <span className="relative inline-block">
+                <span className={`bg-gradient-to-r from-[hsl(330,80%,80%)] to-[hsl(270,60%,80%)] bg-clip-text text-transparent transition-opacity duration-1000 ${showGradient ? "opacity-100" : "opacity-0"}`}>
+                  {displayedName}
+                </span>
+                <span className={`absolute inset-0 text-primary transition-opacity duration-1000 ${showGradient ? "opacity-0" : "opacity-100"}`}>
+                  {displayedName}
+                </span>
                 {showCursor && <span className="text-foreground animate-pulse">|</span>}
               </span>
             </h1>
