@@ -152,7 +152,7 @@ const Stack = () => {
                           key={item.name}
                           initial={{ opacity: 0, y: 15 }}
                           animate={{ opacity: 1, y: 0 }}
-                          whileHover={{ scale: 1.02 }}
+                          whileHover={{ scale: 1.02, backgroundColor: "rgba(253, 232, 243, 0.15)" }}
                           transition={{ duration: 0.35, delay: 0.08 * i }}
                           className="border border-border rounded-xl p-5 bg-card hover:border-primary/30 transition-colors origin-left"
                         >
