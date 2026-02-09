@@ -5,19 +5,21 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import PageTransition from "@/components/PageTransition";
-
 const tags = ["AI Agents", "n8n", "Google Sheets", "LinkedIn API", "Prompt Engineering"];
-
 const ProjectLinkedInAutomation = () => {
-  return (
-    <PageTransition>
+  return <PageTransition>
       <section className="min-h-[calc(100vh-80px)]">
         <div className="max-w-3xl mx-auto px-6 w-full py-20">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-          >
+          <motion.div initial={{
+          opacity: 0,
+          y: 30
+        }} animate={{
+          opacity: 1,
+          y: 0
+        }} transition={{
+          duration: 0.6,
+          delay: 0.1
+        }}>
             <Button asChild variant="ghost" size="sm" className="mb-8 gap-2 text-muted-foreground hover:text-foreground">
               <Link to="/projects">
                 <ArrowLeft className="w-4 h-4" /> Back to Projects
@@ -25,15 +27,13 @@ const ProjectLinkedInAutomation = () => {
             </Button>
 
             <h1 className="text-4xl font-bold tracking-tight mb-4">
-              LinkedIn Post Automation — <span className="text-primary">B2B SaaS Founder</span>
+              LinkedIn Content Automation System -    <span className="text-primary">B2B SaaS Founder</span>
             </h1>
 
             <div className="flex flex-wrap gap-2 mb-8">
-              {tags.map((tag) => (
-                <Badge key={tag} variant="secondary" className="text-xs font-normal">
+              {tags.map(tag => <Badge key={tag} variant="secondary" className="text-xs font-normal">
                   {tag}
-                </Badge>
-              ))}
+                </Badge>)}
             </div>
 
             <div className="space-y-4 mb-10">
@@ -48,11 +48,9 @@ const ProjectLinkedInAutomation = () => {
               <div>
                 <h2 className="text-sm font-semibold text-primary uppercase tracking-wider mb-1">Tools Used</h2>
                 <div className="flex flex-wrap gap-1.5 mt-1">
-                  {["n8n", "AI Agent", "Google Sheets", "LinkedIn API"].map((tool) => (
-                    <Badge key={tool} variant="secondary" className="text-xs font-normal">
+                  {["n8n", "AI Agent", "Google Sheets", "LinkedIn API"].map(tool => <Badge key={tool} variant="secondary" className="text-xs font-normal">
                       {tool}
-                    </Badge>
-                  ))}
+                    </Badge>)}
                 </div>
               </div>
               <div className="border-t border-border" />
@@ -131,8 +129,6 @@ const ProjectLinkedInAutomation = () => {
           </motion.div>
         </div>
       </section>
-    </PageTransition>
-  );
+    </PageTransition>;
 };
-
 export default ProjectLinkedInAutomation;
