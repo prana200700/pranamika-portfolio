@@ -16,7 +16,7 @@ const stackItems: StackItem[] = [
     description:
       "I use n8n to design and manage end-to-end automation workflows, connecting APIs, scheduling content pipelines, and orchestrating content creation, transformation, and publishing systems with minimal manual intervention.",
     logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/n8n.svg",
-    color: "hsl(10, 80%, 55%)",
+    color: "hsl(340, 60%, 80%)",
   },
   {
     name: "Zapier",
@@ -24,7 +24,7 @@ const stackItems: StackItem[] = [
     description:
       "I use Zapier for lightweight automations and quick integrations between tools, bridging gaps where simpler trigger-action workflows are more efficient than full pipeline orchestration.",
     logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/zapier.svg",
-    color: "hsl(15, 90%, 55%)",
+    color: "hsl(350, 55%, 78%)",
   },
   {
     name: "OpenAI APIs",
@@ -32,7 +32,7 @@ const stackItems: StackItem[] = [
     description:
       "I use OpenAI APIs for content generation, ideation, and refinement within automated workflows, integrating them programmatically rather than using them as standalone tools.",
     logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/openai.svg",
-    color: "hsl(170, 60%, 50%)",
+    color: "hsl(270, 50%, 80%)",
   },
   {
     name: "Claude APIs",
@@ -40,7 +40,7 @@ const stackItems: StackItem[] = [
     description:
       "I use Claude APIs for long-form content drafting, rewriting, and structural refinement, particularly where coherence, tone control, and contextual reasoning are required.",
     logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/anthropic.svg",
-    color: "hsl(30, 70%, 60%)",
+    color: "hsl(280, 45%, 78%)",
   },
   {
     name: "Google APIs",
@@ -48,7 +48,7 @@ const stackItems: StackItem[] = [
     description:
       "I use Google APIs to handle data flow, storage, and system connectivity, enabling automation across Sheets, Drive, and other Google services within larger workflows.",
     logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/google.svg",
-    color: "hsl(45, 90%, 55%)",
+    color: "hsl(300, 40%, 82%)",
   },
   {
     name: "LinkedIn",
@@ -56,7 +56,7 @@ const stackItems: StackItem[] = [
     description:
       "I use LinkedIn as the primary distribution layer, designing systems for consistent posting, content scheduling, performance observation, and long-term content strategy execution rather than one-off publishing.",
     logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg",
-    color: "hsl(210, 80%, 55%)",
+    color: "hsl(260, 50%, 80%)",
   },
   {
     name: "Google Sheets",
@@ -64,7 +64,7 @@ const stackItems: StackItem[] = [
     description:
       "I use Google Sheets as both an input and output layer, managing content calendars, prompts, and parameters while also receiving AI-generated content based on predefined schedules.",
     logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googlesheets.svg",
-    color: "hsl(140, 60%, 50%)",
+    color: "hsl(320, 50%, 80%)",
   },
   {
     name: "Notion",
@@ -72,7 +72,7 @@ const stackItems: StackItem[] = [
     description:
       "I use Notion as a central knowledge base and content planning hub, structuring ideas, briefs, and templates that feed into automated content workflows.",
     logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/notion.svg",
-    color: "hsl(0, 0%, 80%)",
+    color: "hsl(290, 40%, 82%)",
   },
   {
     name: "HTML",
@@ -80,7 +80,7 @@ const stackItems: StackItem[] = [
     description:
       "HTML is the backbone of my assets. I use it to structure and format automated content outputs, building reusable templates for assets such as carousels, landing sections, and export-ready content.",
     logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/html5.svg",
-    color: "hsl(16, 85%, 55%)",
+    color: "hsl(330, 55%, 78%)",
   },
   {
     name: "GitHub",
@@ -88,7 +88,7 @@ const stackItems: StackItem[] = [
     description:
       "I use GitHub as an infrastructure layer for managing, versioning, and delivering assets across automated content workflows, enabling reuse, stability, and clean system handoffs.",
     logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg",
-    color: "hsl(0, 0%, 75%)",
+    color: "hsl(270, 45%, 80%)",
   },
 ];
 
