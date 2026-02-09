@@ -6,7 +6,7 @@ import PageTransition from "@/components/PageTransition";
 
 const projects = [
   {
-    title: "LinkedIn Carousel Engine — Calibr.ai",
+    title: "LinkedIn Carousel System - Calibr.ai",
     description:
       "Built a fully automated carousel pipeline for Calibr.ai that replaced their manual design-and-review process.",
     tags: ["AI Agents", "Google Sheets", "Google Drive", "LinkedIn API", "PDF Templating"],
