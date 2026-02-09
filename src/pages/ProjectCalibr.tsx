@@ -37,12 +37,12 @@ const ProjectCalibr = () => {
             </div>
 
             <div className="space-y-4 mb-10">
-              <div>
-                <h2 className="text-sm font-semibold text-primary uppercase tracking-wider mb-1">Timeline</h2>
+              <div className="flex items-center gap-2">
+                <h2 className="text-sm font-semibold text-primary uppercase tracking-wider">Timeline:</h2>
                 <p className="text-foreground font-medium">4 Weeks</p>
               </div>
-              <div>
-                <h2 className="text-sm font-semibold text-primary uppercase tracking-wider mb-1">Client</h2>
+              <div className="flex items-center gap-2">
+                <h2 className="text-sm font-semibold text-primary uppercase tracking-wider">Client:</h2>
                 <p className="text-foreground font-medium">Calibr.ai</p>
               </div>
               <div>
