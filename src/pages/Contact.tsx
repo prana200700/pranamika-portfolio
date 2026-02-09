@@ -85,7 +85,7 @@ const Contact = () => {
                   <Mail className="w-5 h-5 text-primary" />
                   <div>
                     <div className="text-sm font-medium">Email</div>
-                    <div className="text-sm text-muted-foreground">pranamikaknc@gmail.com</div>
+                    <div className="text-sm text-muted-foreground">Drop me an email</div>
                   </div>
                 </a>
                 <a
@@ -97,7 +97,7 @@ const Contact = () => {
                   <Linkedin className="w-5 h-5 text-primary" />
                   <div>
                     <div className="text-sm font-medium">LinkedIn</div>
-                    <div className="text-sm text-muted-foreground">linkedin.com/in/pranamikarajesh</div>
+                    <div className="text-sm text-muted-foreground">Connect with me</div>
                   </div>
                 </a>
               </div>
