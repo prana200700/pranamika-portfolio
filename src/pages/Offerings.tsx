@@ -77,7 +77,7 @@ const Offerings = () => {
                       <p className="text-muted-foreground leading-relaxed">
                         {offering.description}
                       </p>
-                      <p className="text-sm text-muted-foreground/80 italic mt-3 pl-3 border-l-2 border-primary/40">
+                      <p className="text-sm text-muted-foreground/80 italic mt-3 pl-3 border-l-2 border-primary/40 animate-pulse">
                         {offering.highlight}
                       </p>
                     </div>
