@@ -16,21 +16,27 @@ const offerings = [
     title: "End-to-End Content Automation",
     tagline: "From idea to live post — zero manual steps.",
     description:
-      "A complete automation setup covering content drafting, formatting, file generation, and scheduled publishing. You get a hands-off pipeline that runs on autopilot.\n\nUsed to help founders publish consistently without spending daily time on LinkedIn.",
+      "A complete automation setup covering content drafting, formatting, file generation, and scheduled publishing. You get a hands-off pipeline that runs on autopilot.",
+    highlight:
+      "Used to help founders publish consistently without spending daily time on LinkedIn.",
   },
   {
     icon: FileText,
     title: "LinkedIn Carousel & Post Workflows",
     tagline: "Carousels and posts, generated and published on schedule.",
     description:
-      "Custom LinkedIn workflows that handle carousel creation, post formatting, and timed publishing — so your feed stays active without daily effort.\n\nKeeps your LinkedIn feed active and on-schedule without last-minute scrambling.",
+      "Custom LinkedIn workflows that handle carousel creation, post formatting, and timed publishing — so your feed stays active without daily effort.",
+    highlight:
+      "Keeps your LinkedIn feed active and on-schedule without last-minute scrambling.",
   },
   {
     icon: Settings,
     title: "Content Process Standardisation",
     tagline: "Turn your messy workflow into a repeatable system.",
     description:
-      "I audit your current process, build templates and rules around it, and hand you back a clean, scalable content engine.\n\nTurns ad-hoc content work into a system that's easy to maintain and scale.",
+      "I audit your current process, build templates and rules around it, and hand you back a clean, scalable content engine.",
+    highlight:
+      "Turns ad-hoc content work into a system that's easy to maintain and scale.",
   },
 ];
 
@@ -68,8 +74,11 @@ const Offerings = () => {
                     <div>
                       <h3 className="text-lg font-semibold mb-1">{offering.title}</h3>
                       <p className="text-sm text-primary font-medium mb-2">{offering.tagline}</p>
-                      <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
+                      <p className="text-muted-foreground leading-relaxed">
                         {offering.description}
+                      </p>
+                      <p className="text-sm text-muted-foreground/80 italic mt-3 pl-3 border-l-2 border-primary/40">
+                        {offering.highlight}
                       </p>
                     </div>
                   </div>
