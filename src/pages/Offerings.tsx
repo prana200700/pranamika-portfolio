@@ -16,7 +16,7 @@ const offerings = [
     title: "End-to-End Content Automation",
     tagline: "From idea to live post — zero manual steps.",
     description:
-      "A complete automation setup covering content drafting, formatting, file generation, and scheduled publishing. You get a hands-off pipeline that runs on autopilot.",
+      "A complete automation setup covering content drafting, formatting, file generation, and scheduled publishing. You get a hands-off pipeline that runs on autopilot.\n\nUsed to help founders publish consistently without spending daily time on LinkedIn.",
   },
   {
     icon: FileText,
@@ -68,7 +68,7 @@ const Offerings = () => {
                     <div>
                       <h3 className="text-lg font-semibold mb-1">{offering.title}</h3>
                       <p className="text-sm text-primary font-medium mb-2">{offering.tagline}</p>
-                      <p className="text-muted-foreground leading-relaxed">
+                      <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
                         {offering.description}
                       </p>
                     </div>
