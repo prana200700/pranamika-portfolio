@@ -30,7 +30,7 @@ const offerings = [
     title: "Content Process Standardisation",
     tagline: "Turn your messy workflow into a repeatable system.",
     description:
-      "I audit your current process, build templates and rules around it, and hand you back a clean, scalable content engine.",
+      "I audit your current process, build templates and rules around it, and hand you back a clean, scalable content engine.\n\nTurns ad-hoc content work into a system that's easy to maintain and scale.",
   },
 ];
 
