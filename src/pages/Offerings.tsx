@@ -23,7 +23,7 @@ const offerings = [
     title: "LinkedIn Carousel & Post Workflows",
     tagline: "Carousels and posts, generated and published on schedule.",
     description:
-      "Custom LinkedIn workflows that handle carousel creation, post formatting, and timed publishing — so your feed stays active without daily effort.",
+      "Custom LinkedIn workflows that handle carousel creation, post formatting, and timed publishing — so your feed stays active without daily effort.\n\nKeeps your LinkedIn feed active and on-schedule without last-minute scrambling.",
   },
   {
     icon: Settings,
