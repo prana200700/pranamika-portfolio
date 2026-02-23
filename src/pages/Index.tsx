@@ -54,7 +54,8 @@ const Index = () => {
             </h1>
 
             <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-              I help B2B companies and founders build a consistent LinkedIn presence through structured content systems and intelligent automation, without losing their voice.
+              I help B2B companies, creators and individuals automate their LinkedIn content. From idea to published post — 
+              fully automated, structured, and scalable.
             </p>
 
             <div className="flex gap-4">
